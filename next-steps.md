@@ -1,0 +1,3 @@
+For my next steps if I was going to continue developing this webpage into something more professional I will also include something like a drop-down box to be able to select which country or after and then which city and go from there rather than having to manually enter the coordinates because that isn't very user-friendly
+
+ I would also like to implement something which uses a quick algorithm to grab the provided outputs from the API and converted into an estimation over the past few weeks for example and provide that as the result rather than just the exact point in time when you make the request because if it's at night (since this is when I was testing it), always provided an output of zero because it was dark.

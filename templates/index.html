@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Power Estimate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3a5f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #2c5282;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Solar Power Estimate</h2>
+        <form action="/estimate" method="post">
+            <label>Latitude: <input type="text" name="latitude" required></label>
+            <label>Longitude: <input type="text" name="longitude" required></label>
+            <label>Declination: <input type="text" name="declination" required></label>
+            <label>Azimuth: <input type="text" name="azimuth" required></label>
+            <button type="submit">Get Estimate</button>
+        </form>
+    </div>
+</body>
+</html>
